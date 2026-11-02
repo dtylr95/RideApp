@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
+:root{font-family:'DM Sans',system-ui,sans-serif;color:#18342d;background:#f3f6f3;font-synthesis:none;text-rendering:optimizeLegibility}
+*{box-sizing:border-box}
+body{margin:0;min-width:320px}
+button,input,select{font:inherit}
+button{cursor:pointer}
+button:disabled{opacity:.55;cursor:not-allowed}
+.app-shell{max-width:620px;margin:0 auto;padding:24px 17px 35px;display:flex;flex-direction:column;gap:15px}
+.topbar,.brand,.location-line,.location-line strong,.verdict-top,.score-line,.metric-label,.reason,.section-heading,.preference-label{display:flex;align-items:center}
+.topbar,.location-line,.verdict-top,.section-heading,.preference-label{justify-content:space-between}
+.brand{gap:11px}.brand-icon{background:#173d32;color:#fff;border-radius:13px;width:43px;height:43px;display:grid;place-items:center}
+h1{font-size:22px;margin:0;font-weight:800;letter-spacing:-.7px}.brand p{font-size:12px;color:#708079;margin:1px 0 0}
+.card{background:white;border:1px solid #e2e9e3;border-radius:19px;padding:17px;box-shadow:0 4px 16px #173d3208}
+.icon-button,.outline-button,.text-button{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:1px solid #dce5de;background:white;color:#24483d;border-radius:11px;padding:10px 12px;font-size:13px;font-weight:600}
+.eyebrow{font-size:10px;letter-spacing:1.1px;font-weight:800;color:#84938b}
+.location-line strong{gap:5px;margin-top:5px;font-size:14px}
+.search-form{display:flex;gap:8px;margin-top:16px}.search-form input,select{min-width:0;flex:1;padding:11px 12px;border:1px solid #dce5de;border-radius:10px;background:#fbfcfb;color:#18342d;font-size:13px}
+.error-message,.loading-message{display:flex;align-items:flex-start;gap:7px;font-size:12px;color:#a54b3c;margin:12px 0 0}.loading-message{color:#62786c}
+.verdict-top .updated{font-size:11px;color:#89958e}.verdict-title{font-size:29px;font-weight:800;letter-spacing:-1px;margin:16px 0 4px}.verdict-title.good{color:#16815a}.verdict-title.maybe{color:#a7781c}.verdict-title.bad{color:#bc5145}
+.score-line{gap:9px}.score-line strong{font-size:48px;letter-spacing:-2px}.score-line span{font-size:12px;color:#829087}
+.score-track,.track{height:8px;background:#edf1ed;border-radius:9px;overflow:hidden}.score-track{margin-top:5px}.score-track span{display:block;height:100%;border-radius:9px;background:#16815a}.score-track span.maybe{background:#bd8a29}.score-track span.bad{background:#bc5145}
+.verdict-summary{font-size:13px;line-height:1.55;color:#62736a;margin:12px 0 17px}
+.weather-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.metric{padding:12px;background:#f5f8f5;border-radius:12px}.metric-label{gap:7px;color:#728078;font-size:11px}.metric-label svg{width:15px;height:15px}.metric strong{display:block;font-size:21px;margin-top:7px;letter-spacing:-.5px}
+.conditions{display:flex;justify-content:space-between;color:#60766a;font-size:11px;margin-top:12px}
+.reason-block{border-top:1px solid #e8eee9;margin-top:17px;padding-top:15px}.reason-block h3{font-size:13px;margin:0 0 11px}.reason{gap:9px;font-size:12px;margin:9px 0;color:#56695e}.reason-good{color:#16815a}.reason-warn{color:#b47d22}.safety-note{font-size:11px;line-height:1.5;color:#a54b3c;background:#fff5f2;padding:10px;border-radius:9px}
+.refresh-button{width:100%;display:flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:12px;background:#173d32;color:white;padding:13px;font-weight:700;font-size:13px;margin-top:16px}
+.settings-card{display:flex;flex-direction:column;gap:17px}.section-heading h2{font-size:18px;margin:4px 0 0}.text-button{border:0;color:#16815a;background:#edf6f0}.preference{display:flex;flex-direction:column;gap:8px}.preference-label label,.field-label{font-size:12px;font-weight:600}.preference-label strong{font-size:13px}.preference input{width:100%;accent-color:#16815a}.settings-card select{width:100%;flex:auto}
+footer{text-align:center;color:#87938b;font-size:10px;line-height:1.5;padding:3px 12px}
+.spin{animation:spin 1s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+@media(min-width:560px){.app-shell{padding-top:35px}.card{padding:21px}.weather-grid{grid-template-columns:repeat(4,1fr)}}
